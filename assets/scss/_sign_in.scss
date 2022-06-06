@@ -1,0 +1,88 @@
+.sign-in{
+    &__container{
+        // background-color: #fff;
+        width: 768px;
+        max-width: calc(100% - 32px);
+        min-height: 200px;
+        position: relative;
+        background-color: #fff;
+        animation: modalFadeIn ease-in 0.7s;
+    }
+
+    &__close{
+        color: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 12.5px 12.5px 7.5px 12.5px;
+        cursor: pointer;
+        &:hover{
+            background-color: red;
+        }
+    }
+
+    &__header{
+        background-color: #c99552;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 35px;
+        color: #fff;
+        &-icon{
+            margin-right: 12px;
+        }
+    }
+
+    &__form{
+        padding: 16px 32px;
+        &-label{
+            display: block;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
+        &-input{
+            border: 1px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+            padding: 8px;
+            margin-bottom: 25px;
+        }
+        &-btn{
+            color: #fff;
+            background-color: #c99552;
+            width: 100%;
+            font-size: 18px;
+            padding: 10px 0;
+            border-radius: 2px;
+            a{
+                color: #fff;
+            }
+            &:hover{
+                background: #966f3c;
+            }
+        }
+    }
+
+    &__footer{
+        padding: 8px 32px 16px 32px; 
+        text-align: right;
+        font-weight: 400;
+        a{
+            color: #2196F3;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@keyframes modalFadeIn {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
